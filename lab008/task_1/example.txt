@@ -1,0 +1,16 @@
+int a = 0;
+
+void thread1() {
+ a = a + 1;
+}
+
+void thread2() {
+ a = a - 1;
+}
+
+
+************************QUESTIONS***************************
+Data race: YES
+lines numbers: 4, 8
+variables: a
+possible values of the variable "counter" at the end of execution: 0

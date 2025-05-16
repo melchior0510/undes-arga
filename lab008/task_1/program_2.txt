@@ -1,0 +1,24 @@
+int[] array = new int[4];
+
+void thread1() {
+    array[0] = 1;
+    array[2] = array[0] * array[0];
+}
+
+void thread2() {
+    array[1] = 2;
+    array[3] = array[1] * array[1];
+}
+
+************************QUESTIONS***************************
+Data race: YES/NO
+lines numbers: at which lines the data race occur (give all the lines numbers separated by a comma. Otherwise, leave it empty)?
+variables: variables involved in the data race (give all the names separated by a comma. Otherwise, leave it empty)?
+possible values of the variable "array" at the end of execution (example: [1, 2, 3, 4]):(give all the values separated by a comma)
+
+
+************************ANSWER*******************************
+Data race: NO
+lines numbers: 
+variables: 
+possible values of the variable "array" at the end of execution: 1, 2, 1, 4
